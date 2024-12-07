@@ -1,0 +1,8 @@
+services:
+  web:
+    build: ./
+    volumes:
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./html:/var/www/html
+    ports:
+      - 8089:80
